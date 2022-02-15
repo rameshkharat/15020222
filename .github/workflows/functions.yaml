@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: step1
         run: |
-          echo ${{ contains()}}
-          echo ${{startsWith()}}
-          echo ${{endsWith()}}
-          echo ${{format('hello {0} {1} {2}}', 'World', '!', '!')}}
+          echo ${{ contains('hello', 'll') }}
+          echo ${{ startsWith('hello', 'he') }}
+          echo ${{ endsWith('hello', 'lo') }}
+          echo ${{ format('hello {0} {1} {2}}', 'World', '!', '!') }}
