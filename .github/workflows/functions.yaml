@@ -1,10 +1,10 @@
 name: functions 
 on: push
 jobs:
-  functions:
+  function-any:
     runs-on: ubuntu-latest
     steps:
-      - name: step1
+      - name: check1
         run: |
           echo ${{ contains('hello', 'll') }}
           echo ${{ startsWith('hello', 'he') }}
